@@ -1,3 +1,0 @@
-we are meeting ten thirty a m today	2	TIME	ten thirty a m	DATE	today
-the boys will meet nine fifty a m tomorrow	2	TIME	nine fifty a m	DATE	tomorrow
-they will be there by one twenty a m	1	TIME	one twenty a m
