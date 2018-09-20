@@ -19,8 +19,11 @@ def text2spacyFormat(inputfilepath, outputfilepath, data_type):
 	try:
 		inputFile = open(inputfilepath, "r")
 	except:
-		raise Exception("the input file does not exist or you do not have the permission")
-	outputFile = open(outputfilepath, "w")
+		raise Exception("the input file does not exist.")
+	try:
+		outputFile = open(outputfilepath, "w")
+	except:
+		raise Exception("may be you do not have the permission to write here.")
 	counter = 0
 
 	data = re.split('\n', inputFile.read())
@@ -46,7 +49,8 @@ def text2spacyFormat(inputfilepath, outputfilepath, data_type):
 
 	content = content + "]"
 	outputFile.write(content)
-	return	
+	outputFile.close()
+	return 	
 
 if __name__ == '__main__':
-	text2spacyFormat("text.txt", "output.py", "TRAIN_DATA")
+	text2spacyFormat("text.txt", "output.py", "dataset")
