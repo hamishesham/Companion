@@ -7,14 +7,16 @@ from keras.layers import Activation, Dense, Dropout
 from sklearn.preprocessing import LabelBinarizer
 import sklearn.datasets as skds
 from pathlib import Path
-
+import random
 
 # For reproducibility
 np.random.seed(1237)
 
 dataset_path = "/home/samir/Documents/companion/datasets/dataset.tsv"
 dataset = pd.read_csv(dataset_path, delimiter = "\t", quoting = 3)
-
+#random.shuffle(dataset)
+dataset = dataset.sample(frac=1).reset_index(drop=True)
+dataset = dataset.sample(frac=1).reset_index(drop=True)
 train_size = int(len(dataset) * .8)
 
 train_types = dataset['type'][:train_size]
@@ -26,7 +28,7 @@ test_sentence = dataset['sentence'][train_size:]
 test_person = dataset['person'][train_size:]
 
 # 20 news groups
-types_count = 10
+types_count = 9
 vocab_size = 15000
 batch_size = 10
 
@@ -52,10 +54,10 @@ y_test = encoder.transform(test_types)
 
 #keras model
 model = Sequential()
-model.add(Dense(512, input_shape=(vocab_size + 2,))) #shape of the input
+model.add(Dense(100, input_shape=(vocab_size + 2,))) #shape of the input
 model.add(Activation('relu'))
 model.add(Dropout(0.3))
-model.add(Dense(512))
+model.add(Dense(100))
 model.add(Activation('relu'))
 model.add(Dropout(0.3))
 model.add(Dense(types_count)) #shape of the output

@@ -1,62 +1,58 @@
 person	sentence	type
-owner	you will come back to boston	nothing
-other	you will come back to boston	event
 owner	i will come to see you when the sun shines	meeting
 other	i will come to see you when the sun shines	meeting
-owner	i will come and spend the night at paris	travel
-other	i will come and spend the night at paris	nothing
 owner	come with me morning	meeting
 other	come with me morning	meeting
-owner	i have come to you with a message	meeting
-other	i have come to you with a message	nothing
+owner	i have came to you with a message	nothing
+other	i have came to you with a message	nothing
+owner	we will go shopping this afternoon	shopping
+other	we will go shopping this afternoon	nothing
 owner	i will come to you tomorrow	meeting
 other	i will come to you tomorrow	meeting
-owner	come to her on tuesday	nothing
-other	come to her on tuesday	meeting
-owner	i will come and sit with you	meeting
-other	i will come and sit with you	meeting
-owner	you will come to the costume tournament	nothing
-other	you will come to the costume tournament	meeting
-owner	come and eat something with me at morning	meeting
-other	come and eat something with me at morning	meeting
-owner	i will come back to eat dinner	dinner
-other	i will come back to eat dinner	nothing
-owner	i will come out to you in morning	meeting
-other	i will come out to you in morning	meeting
+owner	go to her on tuesday	nothing
+other	go to her on tuesday	meeting
+owner	i will come and spend some time with you	visit
+other	i will come and spend some time with you	visit
+owner	come and eat something with me at morning	visit
+other	come and eat something with me at morning	visit
+owner	i will come back to eat dinner	event
+other	i will come back to eat dinner	event
 owner	we will come to paris in mars	travel
 other	we will come to paris in mars	nothing
-owner	i may come tomorrow	meeting
-other	i may come tomorrow	meeting
-owner	i might come tomorrow	meeting
-other	i might come tomorrow	meeting
-owner	i will come next week	meeting
-other	i will come next week	meeting
-owner	i will come to see you tomorrow	meeting
-other	i will come to see you tomorrow	meeting
-owner	i will come to paris with you	travel
-other	i will come to paris with you	travel
-owner	i will come to memphis monday	travel
-other	i will come to memphis monday	nothing
-owner	we will come to watch a movie tomorrow	hanging out
-other	we will come to watch a movie tomorrow	hanging out
-owner	come with us at six PM	meeting
-other	come with us at six PM	meeting
-owner	fly down on friday	flight
-other	fly down on friday	nothing
+owner	i may come tomorrow	visit
+other	i may come tomorrow	visit
+owner	i will come to see you tomorrow	visit
+other	i will come to see you tomorrow	visit
+owner	i will visit paris with you	nothing
+other	i will visit paris with you	nothing
+owner	i will reach memphis monday	travel
+other	i will reach memphis monday	nothing
+owner	we are watching a movie tomorrow	hanging out
+other	we are watching a movie tomorrow	hanging out
+owner	come with us at six PM	hanging out
+other	come with us at six PM	hanging out
+owner	fly down on friday	nothing
+other	fly down on friday	travel
 owner	tomorrow you would fly back to arkansas	nothing
 other	tomorrow you would fly back to arkansas	flight
+owner	i will come and spend the night at paris	travel
+other	i will come and spend the night at paris	nothing
 owner	tomorrow night we fly up north	flight
 other	tomorrow night we fly up north	nothing
 owner	you could fly down and back	nothing
 other	you could fly down and back	flight
 owner	i will fly to Paris in twenty four mars	flight
 other	i will fly to Paris in twenty four mars	nothing
+owner	i will come next week	meeting
+other	i will come next week	meeting
 owner	i will fly to the meeting	flight
 other	i will fly to the meeting	nothing
 owner	i am going to fly to houston next week	flight
 other	i am going to fly to houston next week	nothing
 owner	this next week we will fly to mexico	flight
 other	this next week we will fly to mexico	nothing
+owner	i will call you tomorrow	calling
+other	i will call you tomorrow	nothing
 owner	i might fly to rome	flight
 other	i might fly to rome	nothing
 owner	we will fly to san diego next week	flight
@@ -64,18 +60,16 @@ other	we will fly to san diego next week	nothing
 owner	we will go to sea	hanging out
 other	we will go to sea	nothing
 owner	you will go to college tomorrow	meeting
-other	you will go to college tomorrow	meeting
+other	you will go to college tomorrow	nothing
 owner	might you go too	nothing
 other	might you go too	meeting
 owner	i will go to doctor	meeting
 other	i will go to doctor	nothing
 owner	you go on home with jonathan	nothing
-other	you go on home with jonathan	travel
+other	you go on home with jonathan	nothing
 owner	i hope you will go with me to athens	nothing
 other	i hope you will go with me to athens	travel
-owner	i can go to sam's club and buy a twenty pound bag	nothing
-other	i can go to sam's club and buy a twenty pound bag	nothing
-owner	i will go to see him	meeting
+owner	i will go to see him	visit
 other	i will go to see him	nothing
 owner	i will go to boston in twenty six june	travel
 other	i will go to boston in twenty six june	nothing
@@ -97,8 +91,8 @@ owner	i am supposed to meet connie at noon	meeting
 other	i am supposed to meet connie at noon	nothing
 owner	meet us in town this afternoon	meeting
 other	meet us in town this afternoon	meeting
-owner	we would meet the young girl on saturday	meeting
-other	we would meet the young girl on saturday	meeting
+owner	we will meet the young girl on saturday	meeting
+other	we will meet the young girl on saturday	meeting
 owner	lets meet your new family	meeting
 other	lets meet your new family	meeting
 owner	princess mary came out to meet pierre	nothing
@@ -108,71 +102,45 @@ other	mom meet the new sitter	nothing
 owner	i will meet you by the main reception desk	meeting
 other	i will meet you by the main reception desk	meeting
 owner	after i finish i will call you	calling
-other	after i finish i will call you	calling
+other	after i finish i will call you	nothing
 owner	when i reach home i will call you	calling
 other	when i reach home i will call you	calling
-owner	waiting for your call today	calling
+owner	waiting for your call today	nothing
 other	waiting for your call today	calling
 owner	i will call you tomorrow	calling
 other	i will call you tomorrow	calling
 owner	i will see you tomorrow	meeting
 other	i will see you tomorrow	meeting
-owner	see you this morning	meeting
-other	see you this morning	meeting
 owner	i will be ready to see you tomorrow	meeting
 other	i will be ready to see you tomorrow	meeting
 owner	i will send you a mail containing the file as soon as i reach home	event
 other	i will send you a mail containing the file as soon as i reach home	event
-owner	i will be sure to send it to you	event
-other	i will be sure to send it to you	event
+owner	i will make sure to send it to you	event
+other	i will make sure to send it to you	event
 owner	i will send you the link to our online forum	event
 other	i will send you the link to our online forum	event
 owner	we are going to eat before we leave	nothing
 other	we are going to eat before we leave	nothing
-owner	no i will eat after ten minutes	nothing
-other	no i will eat after ten minutes	nothing
-owner	you will eat with us	nothing
-other	you will eat with us	nothing
-owner	i am going to eat my breakfast	nothing
-other	i am going to eat my breakfast	nothing
-owner	are you ready to eat and go outside	hanging out
-other	are you ready to eat and go outside	hanging out
-owner	i am going to eat what i like with you	hanging out
-other	i am going to eat what i like with you	hanging out
-owner	i will wait for you to eat with me this morning	hanging out
-other	i will wait for you to eat with me this morning	hanging out
+owner	will you join us	hanging out
+other	will you join us	hanging out
+owner	i am going to eat in pizza hut will you join me	hanging out
+other	i am going to eat in pizza hut will you join me	hanging out
 owner	now lets eat lunch	nothing
 other	now lets eat lunch	nothing
-owner	if you want to eat lets go to eat something	nothing
-other	if you want to eat lets go to eat something	nothing
 owner	i am going to eat pizza with my friend tomorrow	hanging out
 other	i am going to eat pizza with my friend tomorrow	nothing
-owner	lets go to the restaurant to take the dinner	norhing
-other	lets go to the restaurant to take the dinner	nothing
 owner	would you like to eat something with me	hanging out
 other	would you like to eat something with me	hanging out
-owner	lets go to the coffee to drink some coffee	hanging out
-other	lets go to the coffee to drink some coffee	hanging out
-owner	do you like to drink tea with me	meeting
-other	do you like to drink tea with me	meeting
-owner	we are going to take the dinner at seven PM follow us	hanging out
-other	we are going to take the dinner at seven PM follow us	hanging out
-owner	lets go eat before it gets cold	nothing
-other	lets go eat before it gets cold	nothing
+owner	would you like to have coffee with me	hanging out
+other	would you like to have coffee with me	hanging out
+owner	do you like to have a cup tea with me	meeting
+other	do you like to have a cup tea with me	meeting
 owner	i invite you to drink a cup of tea with me	meeting
 other	i invite you to drink a cup of tea with me	meeting
-owner	this place makes a good coffee lets go to try it	nothing
-other	this place makes a good coffee lets go to try it	nothing
-owner	i need a drink lets go to take it	nothing
-other	i need a drink lets go to take it	nothing
-owner	he would drink with you	nothing
-other	he would drink with you	nothing
-owner	what time are we going to leave tomorrow	travel
-other	what time are we going to leave tomorrow	nothing
-owner	i will leave cairo this morning at ten clock	travel
-other	i will leave cairo this morning at ten clock	nothing
-owner	i want to leave you and travel to england on monday	travel
-other	i want to leave you and travel to england on monday	nothing
+owner	i am leaving cairo this morning at ten clock	travel
+other	i am leaving cairo this morning at ten clock	nothing
+owner	i am leaving you and travel to england on monday	travel
+other	i am leaving you and travel to england on monday	nothing
 owner	i will visit you tomorrow morning	visit
 other	i will visit you tomorrow morning	visit
 owner	lets visit the pyramids tomorrow	travel
@@ -181,25 +149,29 @@ owner	i will visit my uncle in the morning	visit
 other	i will visit my uncle in the morning	nothing
 owner	i am going to play football tonight at eight PM	event
 other	i am going to play football tonight at eight PM	nothing
-owner	would you like to play a game with me tomorrow	event
-other	would you like to play a game with me tomorrow	nothing
 owner	tomorrow we are going to play a basketball	event
 other	tomorrow we are going to play a basketball	nothing
 owner	lets play football tonight	event
 other	lets play football tonight	event
-owner	we are going to play a new game	nothing
-other	we are going to play a new game	nothing
-owner	i will teach how you to play well tomorrow	nothing
-other	i will teach how you to play well tomorrow	nothing
-owner	do you want to play with us	nothing
-other	do you want to play with us	nothing
-owner	i will leave cairo at ten AM	travel
-other	i will leave cairo at ten AM	nothing
-owner	i will come to paris at six PM	travel
-other	i will come to paris at six PM	nothing
-owner	we will talk to you tomorrow	nothing
-other	we will talk to you tomorrow	nothing
+owner	would you like to come with us	nothing
+other	would you like to come with us	hanging out
+owner	i am leaving cairo at ten AM	travel
+other	i am leaving cairo at ten AM	nothing
 owner	i will watch this series everyday at nine PM	event
 other	i will watch this series everyday at nine PM	nothing
-owner	i invite you to come to me tomorrow at eight thirty AM	visit
-other	i invite you to come to me tomorrow at eight thirty AM	visit
+owner	i invite you to come to my house tomorrow at eight thirty AM	visit
+other	i invite you to come to my house tomorrow at eight thirty AM	visit
+owner	next week we will fly to mexico	flight
+other	next week we will fly to mexico	nothing
+owner	i might fly to rome	flight
+other	i might fly to rome	nothing
+owner	we will fly to san diego next week	flight
+other	we will fly to san diego next week	nothing
+owner	we will go shopping this afternoon	shopping
+other	we will go shopping this afternoon	nothing
+owner	i will call you tomorrow	calling
+other	i will call you tomorrow	calling
+owner	we are taking dinner at seven PM follow us	hanging out
+other	we are taking dinner at seven PM follow us	hanging out
+owner	see you this morning	meeting
+other	see you this morning	meeting
