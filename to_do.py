@@ -14,7 +14,6 @@ np.random.seed(1237)
 
 dataset_path = "/home/samir/Documents/companion/datasets/dataset.tsv"
 dataset = pd.read_csv(dataset_path, delimiter = "\t", quoting = 3)
-#random.shuffle(dataset)
 dataset = dataset.sample(frac=1).reset_index(drop=True)
 dataset = dataset.sample(frac=1).reset_index(drop=True)
 train_size = int(len(dataset) * .8)
@@ -27,25 +26,23 @@ test_types = dataset['type'][train_size:]
 test_sentence = dataset['sentence'][train_size:]
 test_person = dataset['person'][train_size:]
 
-# 20 news groups
 types_count = 9
 vocab_size = 15000
 batch_size = 10
 
-# define Tokenizer with Vocab Size
 tokenizer = Tokenizer(num_words=vocab_size)
 tokenizer.fit_on_texts(train_sentence)
 
 person_tokenizer = Tokenizer(num_words=2)
 person_tokenizer.fit_on_texts(train_person)
 
-person_train_column = person_tokenizer.texts_to_matrix(train_person, mode='tfidf')
-person_test_column = person_tokenizer.texts_to_matrix(test_person, mode='tfidf')
+person_train_column = person_tokenizer.texts_to_matrix(train_person)
+person_test_column = person_tokenizer.texts_to_matrix(test_person)
 
 
-x_train = np.append(tokenizer.texts_to_matrix(train_sentence, mode='tfidf'), person_train_column, axis=1)
+x_train = np.append(tokenizer.texts_to_matrix(train_sentence), person_train_column, axis=1)
 
-x_test = np.append(tokenizer.texts_to_matrix(test_sentence, mode='tfidf'), person_test_column, axis=1)
+x_test = np.append(tokenizer.texts_to_matrix(test_sentence), person_test_column, axis=1)
  
 encoder = LabelBinarizer()
 encoder.fit(train_types)
@@ -74,10 +71,17 @@ score = model.evaluate(x_test, y_test, batch_size=batch_size, verbose=1)
 print('Test accuracy:', score[1])
  
 text_labels = encoder.classes_
- 
-for i in range(10):
+
+#calculating accuracy
+a = 0
+for i in range(30):
     prediction = model.predict(np.array([x_test[i]]))
     predicted_label = text_labels[np.argmax(prediction[0])]
-    #print(test_files_names.iloc[i])
+    print(test_person[i + 140] + " : " + test_sentence[i + 140])
     print('Actual label:' + test_types.iloc[i])
-    print("Predicted label: " + predicted_label)
+    print("Predicted label: " + predicted_label + "\n")
+    if predicted_label == test_types.iloc[i]:
+    	a = a + 1
+
+a = a/30
+print("accuracy = " + str(a))
